@@ -2,9 +2,23 @@
 <html>
 <head>
     <title>Carriage Reservations</title>
+    <style>
+        form { max-width: 400px; margin: 20px auto; }
+        input, select { width: 100%; margin: 10px 0; padding: 5px; }
+    </style>
 </head>
 <body>
-    <h1>Carriage Reservations</h1>
-    <p>Welcome to our booking system!</p>
+    <form>
+        <h1>Book Your Carriage Ride</h1>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <select required>
+            <option value="">Select Time</option>
+            <option>9:00 AM</option>
+            <option>2:00 PM</option>
+            <option>5:00 PM</option>
+        </select>
+        <input type="submit" value="Book Now">
+    </form>
 </body>
 </html>
