@@ -1,8 +1,7 @@
-import React from 'react';
-import BookingForm from './components/BookingForm';
+import React from 'react'
 
 function App() {
-  return <BookingForm />;
+  return <h1>Hello, World!</h1>
 }
 
-export default App;
+export default App
