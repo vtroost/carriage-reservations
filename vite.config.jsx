@@ -3,17 +3,17 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [react()], // Includes React plugin for JSX transformation
+  plugins: [react()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, './src'), // Configures alias for '@' pointing to the './src' directory
+      '@': resolve(__dirname, './src'), // Ensures '@' points to the 'src' directory
     },
   },
   build: {
-    outDir: 'dist', // Ensures output is placed in the 'dist' folder
-    sourcemap: true, // Adds source maps for debugging in production
+    outDir: 'dist', // Outputs to 'dist' folder
+    sourcemap: true, // Generates source maps for debugging
   },
   server: {
-    open: true, // Opens the browser on server start
+    open: true, // Opens browser on server start
   },
 });
